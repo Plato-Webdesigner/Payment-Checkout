@@ -97,5 +97,5 @@ payBtn.addEventListener("click", payClickHandler);
 // Add event to payment header button.
 paymentHeaderBtn.addEventListener("click", event => {
     event.preventDefault();
-    location.replace("../../index.html");
+    location.replace("../../");
 });
