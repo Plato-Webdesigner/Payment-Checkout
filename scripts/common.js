@@ -1,0 +1,19 @@
+// Selectors
+export const bankCard = document.querySelector(".payment__card");
+export const bankCardFront = document.querySelector(".card-front");
+export const bankCardBack = document.querySelector(".card-back"); 
+export const cardNameText = document.querySelector(".owner-text"); 
+export const cardNumberText = document.querySelector(".card-front__number"); 
+export const cardExpiryMonth = document.querySelector(".expiry-month"); 
+export const cardExpiryDay = document.querySelector(".expiry-day"); 
+export const cardName = document.querySelector(".cardName-input");
+export const cardNumber = document.querySelectorAll(".cardNumber-input");
+export const cardExpiryDate = document.querySelectorAll(".cardExpiry-input");
+export const expiryMonthInput = document.querySelector(".expiry-month--input");
+export const expiryDayInput = document.querySelector(".expiry-month--input");
+export const cardCvv2 = document.querySelector(".cardCvv2-input");
+export const cvv2Text = document.querySelector(".cvv2");
+export const payBtn = document.querySelector(".payment-check--btn");
+export const animationBox = document.querySelector(".box-animation");
+export const paymentForm = document.querySelector(".payment-form");
+export const paymentHeaderBtn = document.querySelector(".payment-button");

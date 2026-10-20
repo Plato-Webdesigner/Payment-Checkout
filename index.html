@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Amirhossein Plato">
+    <meta name="description" content="Design a payment checkout website.">
+    <title>Payment Checkout</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="imgs/favicon.png">
+</head>
+
+<body class="body">
+    <section class="payment">
+        <div class="payment__container">
+            <header class="payment__header">
+                <div class="header-logo">
+                    <a href="https://plato-webdesigner.github.io/amirhossein-portfolio/" class="portfolio-site"
+                        target="_blank">
+                        <img src="./imgs/favicon.png" alt="Logo" class="logo-img">
+                    </a>
+                    <p class="author-name">
+                        Plato
+                        <span class="checkout-text">checkout</span>
+                    </p>
+                </div>
+                <div class="payment-options">
+                    <button class="cart-button option-button">
+                        <img src="imgs/cart-icon.svg" alt="Cart image" class="payment-options--img">
+                        <span class="cart-text">Cart</span>
+                    </button>
+
+                    <button class="shopping-button option-button">
+                        <img src="imgs/shopping-icon.svg" alt="shopping image" class="payment-options--img">
+                        <span class="shopping-text">Shopping</span>
+                    </button>
+
+                    <button class="payment-button option-button">
+                        <img src="imgs/payment-icon.svg" alt="payment image" class="payment-options--img">
+                        <span class="payment-text">Payment</span>
+                    </button>
+                </div>
+            </header>
+            <main class="payment__content">
+                <div class="payment__card">
+                    <div class="card-face card-front">
+                        <div class="card-front__top">
+                            <div class="card-icons">
+                                <img src="imgs/card-chip-icon.png" alt="Card chip" class="card-chip--icon">
+                                <img src="imgs/contactless-icon-white.png" alt="contactless"
+                                    class="card-contactless--icon">
+                            </div>
+                            <p class="card-level">platinum</p>
+                        </div>
+                        <p class="card-front__number">XXXX XXXX XXXX XXXX</p>
+                        <div class="card-front__bottom">
+                            <p class="card-owner">Owner<span class="owner-text">X</span></p>
+                            <p class="expiration-text">
+                                Expiration
+                                <span class="expiration-date">
+                                    <span class="expiry-month">XX</span> / <span class="expiry-day">XX</span>
+                                </span>
+                            </p>
+                            <p class="card-type">VISA</p>
+                        </div>
+                    </div>
+                    <div class="card-face card-back">
+                        <div class="card-back__tape"></div>
+                        <div class="card-back__cvv2">
+                            <span class="cvv2-text">CVV2</span>
+                            <p class="cvv2"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-animation animation-hidden">
+                    <video class="gift-animation" autoplay muted loop playsinline>
+                        <source src="imgs/gift-transparent.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="payment__details">
+                    <h1 class="payment__title">Payment Details</h1>
+                    <div class="payment-form">
+                        <div class="payment-form__item">
+                            <p class="cardInputs-text">Cardholder Name</p>
+                            <div class="card-holder">
+                                <img src="imgs/cardholder-name-white.png" alt="Card name image"
+                                    class="payment-form--icon">
+                                <input type="text" maxlength="20" class="cardName-input" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="payment-form__item">
+                            <p class="cardInputs-text">CardNumber</p>
+                            <div class="card-holder">
+                                <img src="imgs/card-number-white.png" alt="Card number image"
+                                    class="payment-form--icon">
+                                <input type="text" inputmode="numeric" maxlength="4" class="cardNumber-input" required placeholder="1234">
+                                <input type="text" inputmode="numeric" maxlength="4" class="cardNumber-input" required placeholder="1234">
+                                <input type="text" inputmode="numeric" maxlength="4" class="cardNumber-input" required placeholder="1234">
+                                <input type="text" inputmode="numeric" maxlength="4" class="cardNumber-input" required placeholder="1234">
+                            </div>
+                        </div>
+                        <div class="payment-form__cardDetails payment-form__item">
+                            <div class="payment-form__expiryDate">
+                                <p class="cardInputs-text">Expiry Date</p>
+                                <div class="cardExpiry-holder">
+                                    <img src="imgs/expiry-date-white.png" alt="Card expiry img"
+                                        class="payment-form--icon">
+                                    <input type="text" maxlength="2" inputmode="numeric" class="cardExpiry-input expiry-month--input"
+                                        placeholder="M">
+                                    /
+                                    <input type="text" maxlength="2" inputmode="numeric" class="cardExpiry-input expiry-day--input"
+                                        placeholder="D">
+                                </div>
+                            </div>
+                            <div class="payment-form__cvv2">
+                                <p class="cardInputs-text">CVV/CVC</p>
+                                <div class="cardCvv2-holder">
+                                    <img src="imgs/cvv2-white.png" alt="Card Cvv2 img" class="payment-form--icon">
+                                    <input type="text" maxlength="3" inputmode="numeric" class="cardCvv2-input"
+                                        placeholder="Cvv2">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="payment-check--btn">pay</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+    <script src="./scripts/main.js" defer type="module"></script>
+</body>
+
+</html>
