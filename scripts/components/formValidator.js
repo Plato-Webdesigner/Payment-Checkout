@@ -67,6 +67,12 @@ const paymentFormHandler = event => {
 paymentForm.addEventListener("input", paymentFormHandler);
 
 
+// Add event to payment header button.
+paymentHeaderBtn.addEventListener("click", event => {
+    event.preventDefault();
+    location.replace("https://plato-webdesigner.github.io/Payment-Checkout/");
+});
+
 // Defined a function for checking situation of filling inputs.
 const inputsCheckFill = () => {
     if (cardName.value.length > 0 &&
@@ -93,9 +99,3 @@ const payClickHandler = () => {
 };
 
 payBtn.addEventListener("click", payClickHandler);
-
-// Add event to payment header button.
-paymentHeaderBtn.addEventListener("click", event => {
-    event.preventDefault();
-    location.replace("https://plato-webdesigner.github.io/Payment-Checkout/");
-});
