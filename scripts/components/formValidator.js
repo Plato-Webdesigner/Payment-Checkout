@@ -90,13 +90,15 @@ const inputsCheckFill = () => {
 };
 
 const payClickHandler = () => {
-        alert("okey")
+
+    if (inputsCheckFill) {
         animationBox.classList.remove("animation-hidden");
         setTimeout(() => {
             animationBox.classList.add("animation-hidden");
         }, 3500)
-    
+    };
+
 };
 
 document.querySelector(".payment-check--btn")
-.addEventListener("click", () => alert("Hi"));
+.addEventListener("click", payClickHandler);
