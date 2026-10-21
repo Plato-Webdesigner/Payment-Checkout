@@ -99,4 +99,4 @@ const payClickHandler = () => {
 };
 
 document.querySelector(".payment-check--btn")
-.addEventListener("click", payClickHandler);
+.addEventListener("click", () => alert("Hi"));
