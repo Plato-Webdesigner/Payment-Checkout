@@ -84,7 +84,7 @@ const inputsCheckFill = () => {
 };
 
 const payClickHandler = () => {
-    
+        alert("okey")
         animationBox.classList.remove("animation-hidden");
         setTimeout(() => {
             animationBox.classList.add("animation-hidden");
