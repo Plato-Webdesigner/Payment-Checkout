@@ -84,12 +84,12 @@ const inputsCheckFill = () => {
 };
 
 const payClickHandler = () => {
-    if (inputsCheckFill()) {
+    
         animationBox.classList.remove("animation-hidden");
         setTimeout(() => {
             animationBox.classList.add("animation-hidden");
         }, 3500)
-    }
+    
 };
 
 payBtn.addEventListener("click", payClickHandler);
